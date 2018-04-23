@@ -9,7 +9,7 @@ System.out.println("Enter bank name");
 String detl =sc.nextLine();
 System.out.println("Enter city");
 String det2 =sc.nextLine();
-String query1 ="select * from BankDetails where bank_name=det1 and city=det2";
+String query1 ="select * from [BankDetails$] where bank_name=det1 and city=det2";
 Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 Connection conn = DriverManager.getConnection("jdbc:odbc:BankDetails");
 Statement stt =conn.createStatement();
