@@ -7,7 +7,7 @@ public static void main(String[] args) throws Exception
 Scanner sc = new Scanner(System.in);
 System.out.println("Enter IFSC code");
 String detl =sc.nextLine();
-String query1 ="select * from [Sheet1$] where ifcs=det1";
+String query1 ="select * from [BankDetails$] where ifcs=det1";
 Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 Connection conn = DriverManager.getConnection("jdbc:odbc:BankDetails");
 Statement stt =conn.createStatement();
